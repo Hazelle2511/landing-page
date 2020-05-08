@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 span {
+  text-transform: uppercase;
+
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+}
+h2 span::before {
+  content: "";
+  position: absolute;
+  width: 3em;
+  background: lightgreen;
+  height: 0.4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -0.3em;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  display: inline;
+}
+
+#header {
+  background-image: url("showcase.jpg");
+  height: 80rem;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15rem;
+}
+
+.clear {
+  clear: both;
+}
+nav a {
+  text-align: center;
+  color: green;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav li {
+  float: left;
+  margin: 0rem 4rem;
+}
+
+#header-img {
+  float: right;
+  margin-top: -4vh;
+}
+
+nav {
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Form */
+
+#form {
+  margin: auto;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 60%;
+  transform: translate(40%, 80%);
+  line-height: 2;
+}
+
+h2 {
+  display: inline-block;
+}
+h3 {
+  color: green;
+}
+#email {
+  padding: 12px 20px;
+  width: 70%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  border-radius: 4px;
+}
+#submit {
+  width: 50%;
+  margin-left: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#video-intro {
+  display: flex;
+}
+
+#left {
+  float: left;
+  font-size: 15px;
+  padding: 20px 10px;
+  text-align: center;
+  line-height: 5rem;
+}
+
+#video {
+  width: 100%;
+  transform: translateY(5%);
+}
+
+#footer {
+  background-color: oldlace;
+  padding: 4rem;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+@media (min-width: 600px) {
+  #header {
+    height: 100vh;
+  }
+
+  #video {
+    transform: translateY(1%);
+  }
+}
